@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kid's E-commerce Store</title>
+    <style>
+      body {
+        background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #fff;
+        padding: 1.5rem 0;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      header h1 {
+        margin: 0;
+        color: #ff7e5f;
+        font-size: 2.2rem;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+      nav a {
+        color: #ff7e5f;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+      }
+      .product-card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 4px 16px rgba(255, 126, 95, 0.08);
+        padding: 1.2rem;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+      .product-card:hover {
+        transform: translateY(-6px) scale(1.03);
+      }
+      .product-card img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+      .product-title {
+        font-size: 1.1rem;
+        color: #ff7e5f;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+      .product-desc {
+        color: #555;
+        font-size: 0.98rem;
+        margin-bottom: 0.7rem;
+      }
+      .product-price {
+        color: #27ae60;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+      }
+      .buy-btn {
+        background: #ff7e5f;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .buy-btn:hover {
+        background: #eb5757;
+      }
+      @media (max-width: 600px) {
+        .products {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kid's E-commerce Store</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2 style="color: #ff7e5f; text-align: center">Our Products</h2>
+      <div class="products">
+        <div class="product-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/03/31/19/14/cricket-1294921_1280.png"
+            alt="Cricket Bat"
+          />
+          <div class="product-title">Cricket Bat</div>
+          <div class="product-desc">
+            Play like a champion with this sturdy cricket bat!
+          </div>
+          <div class="product-price">₹499</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/31/13/14/auto-rickshaw-2024118_1280.png"
+            alt="Auto Rickshaw Toy"
+          />
+          <div class="product-title">Auto Rickshaw Toy</div>
+          <div class="product-desc">
+            A fun auto rickshaw toy, a classic on Indian roads.
+          </div>
+          <div class="product-price">₹299</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/06/02/18/24/laddu-2367027_1280.png"
+            alt="Indian Sweets"
+          />
+          <div class="product-title">Indian Sweets</div>
+          <div class="product-desc">Delicious laddus to sweeten your day!</div>
+          <div class="product-price">₹199</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/31/13/14/school-bag-2024119_1280.png"
+            alt="School Bag"
+          />
+          <div class="product-title">School Bag</div>
+          <div class="product-desc">
+            A colorful school bag for all your books and supplies.
+          </div>
+          <div class="product-price">₹399</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
